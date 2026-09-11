@@ -1,7 +1,6 @@
-export function ShowText(){
-    let nm = "Welcome, Neha";
+export function ShowText(name){
     return (<>
-            <h1>{nm}
+            <h1>Welcome, {name.name} baby
             </h1></>
         );
 }
