@@ -4,6 +4,7 @@ import {ShowText} from "./ShowText.jsx";
 import {ColorChange} from "./ClassDemo.jsx";
 import {Home} from "./RoutingDemo.jsx";
 import {BrowserRouter, Route, Link, Routes} from "react-router-dom";
+import {SearchBar} from "./TransitionHook.jsx";
 function App(){
     // const v = ['mustang','Activa','Honda'];
     // let [car,bike,cycle] =v;
@@ -22,6 +23,9 @@ function App(){
     const [count,setCount] = useState(0);
     if(count ===1){
         content = <Expressions valv={5}/>
+    }
+    else if(count === 3){
+        content = <SearchBar/>;
     }
     else if(count === 5)
         content = <ColorChange favColor="green" />
